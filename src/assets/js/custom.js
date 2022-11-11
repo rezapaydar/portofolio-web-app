@@ -126,6 +126,10 @@ $(".custom-select-trigger").on("click", function() {
 
 
   window.addEventListener('load',()=>{
+    // $('.navbar-icon').click(()=>{
+      // $('.navbar-icon').css({"height": "60px !important", "font-size": "200%","position":"absolute"});
+      // console.log($('.navbar-icon').height());
+    // })
     localStorage.setItem('theme','light');
     darklightthemeF()
   })

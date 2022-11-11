@@ -1,0 +1,77 @@
+{
+    "li1":"home",
+    "li2":"about",
+    "li3":"services",
+    "li4":"projects",
+    "li5":"contacts",
+    "discoverme":"Discover More",
+    "wellcome":"hello friend!",
+    "begin":"I’m available for freelance work. <br> Front-end programmer with an average working level",
+    "lbegin":"lets begin",
+    "mystory":"my story",
+    "lit":"a little bit about mamareza",
+    "litCom":"Soon an east wind will blow us all away🍃🌪️ <br> Se niorFrontend Developer ( angular freamwork | html5 | css3 | javascript (es6 | es7 | es8) <br> ui ux designer <br><br>I was born in Iran in 2001 and I was interested in web programming since I was 18 years old. In the web world Angular framework fascinated me. I am also a designer of posters, business cards and Instagram designs. I am also a teacher of front-end programming and website design in Farsi language. I am always interested in learning new things and working with you will be my honor. ",
+    "information":{
+        "n":"name",
+        "name":"mohammadreza jaberi",
+        "b":"birthDay",
+        "BirthDay":"june 9, 2001",
+        "p":"phone",
+        "phone":"0938-903-5836",
+        "e":"email"
+    },
+    "aboutthumb":{
+        "yof":"Years of Experiences",
+        "hc":"Happy Customers",
+        "yet":"year experience teaching programming on Instagram"
+    },
+    "working":"Companies I've had worked",
+    "serv":"Services",
+    "services":{
+        "front":{
+            "on":"front-end Websites",
+            "tw":"$100 , $4000 per project",
+            "th":"I previously worked on a store and service website on the Angular platform and did their front-end services. <br>The cost of designing or developing a website and adding various modules to your website will range from $100 to $3500."
+        },"graphic":{
+            "on":"Graphic Design",
+            "th":"If you need a good, coherent and beautiful graphic design, I will be happy to make your work easier.<br>The cost of graphic design can be done from 10 dollars to 100 dollars"
+        },"uiux":{
+            "on":"ui and ux",
+            "tw":"$20 - $50 per hour",
+            "th":"I have the experience of building user interface and the user experience of several projects and I know the colors and elements of the web page.I am fluent in Adobe XD and Figma software, and I am also skilled in Illustrator"
+        }    
+    },"projects":{
+        "uiux":{
+        "name":"ui and ux",
+        "description":"Doctor's office appointment website",
+        "don":"download"
+        },"website":{
+            "name":"website",
+            "webn":"rton website",
+            "btn":"see rton site"
+        },"graphic":{
+            "name":"graphic design",
+            "law":"Law firm business card" 
+        }
+    },
+    "formvars":{
+        "n":"name",
+        "e":"email Address",
+        "w":"websites",
+        "u":"ui and ux",
+        "g":"graphic",
+        "t":"Tell me about the project",
+        "s":"send"
+    },
+    "tellwhat":"tell what you want",
+    "menuitemsfooter":{
+    "one":"Services",
+    "two":"Stay connected",
+    "three":"Start a project",
+    "four":"About",
+    "five":"Email",
+    "six":"Call"},
+    "status":"I’m available for freelance projects",
+    "lineabout":"mamareza is a professional web developer. Feel free to get in touch with me.",
+    "copy":"Copyright © 2036 <a href='#'>mamareza_front</a> person. All rights reserved."
+}

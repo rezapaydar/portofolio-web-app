@@ -1,9 +1,9 @@
 
-        <section class="preloader">
-          <div class="spinner">
-              <span class="spinner-rotate"></span>    
-          </div>
-      </section>
+    <section class="preloader">
+        <div class="spinner">
+            <span class="spinner-rotate"></span>    
+        </div>
+    </section>
 
       <nav class="navbar navbar-expand-lg">
           <div class="container">
@@ -26,31 +26,46 @@
               <div class="collapse navbar-collapse" id="navbarNav">
                   <ul class="navbar-nav ms-lg-5">
                       <li class="nav-item">
-                          <a class="nav-link click-scroll" href="#section_1">Home</a>
+                          <a class="nav-link click-scroll" href="#section_1">{{ 'li1' | translate }}</a>
                       </li>
 
                       <li class="nav-item">
-                          <a class="nav-link click-scroll" href="#section_2">About</a>
+                          <a class="nav-link click-scroll" href="#section_2">{{ 'li2' | translate }}</a>
                       </li>
 
                       <li class="nav-item">
-                          <a class="nav-link click-scroll" href="#section_3">Services</a>
+                          <a class="nav-link click-scroll" href="#section_3">{{ 'li3' | translate }}</a>
                       </li>
 
                       <li class="nav-item">
-                          <a class="nav-link click-scroll" href="#section_4">Projects</a>
+                          <a class="nav-link click-scroll" href="#section_4">{{ 'li4' | translate }}</a>
                       </li>
 
                       <li class="nav-item">
-                          <a class="nav-link click-scroll" href="#section_5">Contact</a>
+                          <a class="nav-link click-scroll" href="#section_5">{{ 'li5' | translate }}</a>
                       </li>
 
                   </ul>
 
-                  <div class="d-lg-flex align-items-center d-none ms-auto">
-                      <i class="navbar-icon bi-telephone-plus me-3"></i>
+
+                    <div class="d-lg-flex align-items-center d-none ms-auto" style="position: relative;">
+                      
+                        <button class="btn-cssbuttons">
+                            <span></span><span>
+
+                                <i class=" bi bi-globe me-3"></i>
+
+
+                            </span>
+                            <ul>
+                            <li>
+                            <a (click)="useLanguage('en')">En</a>
+                            </li>
+                            <li>
+                            <a (click)="useLanguage('fa')">Fa</a></li></ul></button>
+                      
                  
-                      <select name="potencial" id="potencial" class="custom-select sources" placeholder="tell me on : ">
+                      <select name="potencial" id="potencial" class="custom-select sources" placeholder="call me on : ">
                           <option value="DH" selected> <a class="custom-btn btn" href="https://wa.me/whatsappphonenumber/?text=urlencodedtext">
                               whatssup : 0938-903-5836 
                       </a></option>
@@ -92,11 +107,11 @@
                               <div class="hero-title-wrap d-flex align-items-center mb-4">
                                   <img src="assets/images/guy.jpg" class="avatar-image avatar-image-large img-fluid" alt="">
 
-                                  <h1 class="hero-title ms-3 mb-0">Hello friend!</h1>
+                                  <h1 class="hero-title ms-3 mb-0">{{ 'wellcome' | translate }}</h1>
                               </div>
 
-                              <h2 class="mb-4" style="font-size: 20px !important;letter-spacing:1px;">I’m available for freelance work. <br> Front-end programmer with an average working level</h2>
-                              <p class="mb-4"><a class="custom-btn btn custom-link" href="#section_2">Let's begin</a></p>
+                              <h2 class="mb-4" style="font-size: 20px !important;letter-spacing:1px;">{{ 'begin' | translate }}</h2>
+                              <p class="mb-4"><a class="custom-btn btn custom-link" href="#section_2">{{ 'lbegin' | translate }}</a></p>
                           </div>
                       </div>
 
@@ -124,23 +139,16 @@
                           <div class="about-thumb">
 
                               <div class="section-title-wrap d-flex justify-content-end align-items-center mb-4">
-                                  <h2 class="text-white me-4 mb-0" >My Story</h2>
+                                  <h2 class="text-white me-4 mb-0" >{{'mystory' | translate}}</h2>
 
                                   <img src="assets/images/guy.jpg" class="avatar-image img-fluid" alt="">
                               </div>
 
-                              <h3 class="pt-2 mb-3">a little bit about mamareza</h3>
+                              <h3 class="pt-2 mb-3">{{'lit' | translate}}</h3>
 
                               <p>
-                                  Soon an east wind will blow us all away🍃🌪️ <br>
-                                  Se niorFrontend Developer ( angular freamwork | html5 | css3 | javascript (es6 | es7 | es8) <br>
-                                  ui ux designer <br><br>
-                                  I was born in Iran in 2001 and I was interested in web programming since I was 18 years old. In the web world Angular framework fascinated me.
-                                  I am also a designer of posters, business cards and Instagram designs.
-                                 I am also a teacher of front-end programming and website design in Farsi language.
-                                 I am always interested in learning new things and working with you will be my honor.                                
-                              </p>
-
+                                {{'litCom' | translate}}                             
+                             </p>
                           </div>
                       </div>
 
@@ -155,27 +163,27 @@
                       <div class="col-lg-6 col-12">
                           <div class="profile-thumb">
                               <div class="profile-title">
-                                  <h4 class="mb-0">Information</h4>
+                                  <h4 class="mb-0">{{'inf' | translate}}</h4>
                               </div>
 
                               <div class="profile-body">
                                   <p>
-                                      <span class="profile-small-title">Name</span> 
-                                      <span>mohammad reza jaberi </span>
+                                      <span class="profile-small-title">{{'information.n' | translate}}</span> 
+                                      <span>{{'information.name' | translate}}</span>
                                   </p>
 
                                   <p>
-                                      <span class="profile-small-title">Birthday</span> 
-                                      <span>june 9, 2001</span>
+                                      <span class="profile-small-title">{{'information.b' | translate}}</span> 
+                                      <span>{{'information.BirthDay' | translate}}</span>
                                   </p>
 
                                   <p>
-                                      <span class="profile-small-title">Phone</span> 
+                                      <span class="profile-small-title">{{'information.p' | translate}}</span> 
                                        <span><a href="tel: 305-240-9671">0938-903-5836</a></span>
                                   </p>
 
                                   <p>
-                                      <span class="profile-small-title">Email</span> 
+                                      <span class="profile-small-title">{{'information.e' | translate}}</span> 
                                       <span><a href="rezapaydarhmd@gmail.com">rezapaydarhmd@gmail.com</a></span>
                                   </p>
                               </div>
@@ -188,19 +196,19 @@
                                   <div class="col-lg-6 col-6 featured-border-bottom py-2">
                                       <strong class="featured-numbers">4+</strong>
 
-                                      <p class="featured-text">Years of Experiences</p>
+                                      <p class="featured-text">{{'aboutthumb.yof' | translate}}</p>
                                   </div>
 
                                   <div class="col-lg-6 col-6 featured-border-start featured-border-bottom ps-5 py-2">
                                       <strong class="featured-numbers">30+</strong>
 
-                                      <p class="featured-text">Happy Customers</p>
+                                      <p class="featured-text">{{'aboutthumb.hc' | translate}}</p>
                                   </div>
 
                                   <div class="col-lg-6 col-6 pt-4">
                                       <strong class="featured-numbers">1+</strong>
 
-                                      <p class="featured-text">year experience teaching programming on Instagram</p>
+                                      <p class="featured-text">{{'aboutthumb.yet' | translate}}</p>
                                   </div>
 
                                   <!-- <div class="col-lg-6 col-6 featured-border-start ps-5 pt-4">
@@ -222,7 +230,7 @@
                   <div class="row align-items-center">
 
                       <div class="col-lg-12 col-12">
-                          <h3 class="text-center mb-5">Companies I've had worked</h3>
+                          <h3 class="text-center mb-5">{{'working' | translate}}</h3>
                       </div>
 
                       <div class="col-lg-3 col-4 ms-auto clients-item-height">
@@ -258,25 +266,24 @@
                           <div class="section-title-wrap d-flex justify-content-center align-items-center mb-5">
                               <img src="assets/images/handshake-man-woman-after-signing-business-contract-closeup.jpg" class="avatar-image img-fluid" alt="">
 
-                              <h2 class="text-white ms-4 mb-0">Services</h2>
+                              <h2 class="text-white ms-4 mb-0">{{'serv' | translate}}</h2>
                           </div>
 
                           <div class="row pt-lg-5">
                               <div class="col-lg-6 col-12">
                                   <div class="services-thumb">
                                       <div class="d-flex flex-wrap align-items-center border-bottom mb-4 pb-3">
-                                          <h3 class="mb-0">front-end Websites</h3>
+                                          <h3 class="mb-0">{{'services.front.on' | translate}}</h3>
 
                                           <div class="services-price-wrap ms-auto">
-                                              <p class="services-price-text mb-0">$100 , $4000 per project</p>
+                                              <p class="services-price-text mb-0">{{'services.front.tw' | translate}}</p>
                                               <div class="services-price-overlay"></div>
                                           </div>
                                       </div>
 
-                                      <p>I previously worked on a store and service website on the Angular platform and did their front-end services. <br>
-                                          The cost of designing or developing a website and adding various modules to your website will range from $100 to $3500.</p>
+                                      <p>{{'services.front.th' | translate}}</p>
 
-                                      <a href="#projects" class="custom-btn custom-border-btn btn mt-3">Discover More</a>
+                                      <a href="#projects" class="custom-btn custom-border-btn btn mt-3">{{'discoverme' | translate}}</a>
 
                                       <div class="services-icon-wrap d-flex justify-content-center align-items-center">
                                           <i class="services-icon bi-globe"></i>
@@ -287,7 +294,7 @@
                               <div class="col-lg-6 col-12">
                                   <div class="services-thumb services-thumb-up">
                                       <div class="d-flex flex-wrap align-items-center border-bottom mb-4 pb-3">
-                                          <h3 class="mb-0">Graphic Design</h3>
+                                          <h3 class="mb-0">{{'services.graphic.on' | translate}}</h3>
 
                                           <div class="services-price-wrap ms-auto">
                                               <p class="services-price-text mb-0">$10 , $100</p>
@@ -295,11 +302,9 @@
                                           </div>
                                       </div>
 
-                                      <p>If you need a good, coherent and beautiful graphic design, I will be happy to make your work easier.
-                                          <br>
-                                          The cost of graphic design can be done from 10 dollars to 100 dollars</p>
+                                      <p>{{'services.graphic.th' | translate}}</p>
 
-                                      <a href="#projects" class="custom-btn custom-border-btn btn mt-3">Discover More</a>
+                                      <a href="#projects" class="custom-btn custom-border-btn btn mt-3">{{'discoverme' | translate}}</a>
 
                                       <div class="services-icon-wrap d-flex justify-content-center align-items-center">
                                           <i class="services-icon bi-lightbulb"></i>
@@ -310,18 +315,17 @@
                               <div class="col-lg-6 col-12">
                                   <div class="services-thumb">
                                       <div class="d-flex flex-wrap align-items-center border-bottom mb-4 pb-3">
-                                          <h3 class="mb-0">ui and ux</h3>
+                                          <h3 class="mb-0">{{'services.uiux.on' | translate}}</h3>
 
                                           <div class="services-price-wrap ms-auto">
-                                              <p class="services-price-text mb-0"> $20 - $50 per hour</p>
+                                              <p class="services-price-text mb-0"> {{'services.uiux.tw' | translate}}</p>
                                               <div class="services-price-overlay"></div>
                                           </div>
                                       </div>
 
-                                      <p>I have the experience of building user interface and the user experience of several projects and I know the colors and elements of the web page.
-                                          I am fluent in Adobe XD and Figma software, and I am also skilled in Illustrator</p>
+                                      <p>{{'services.uiux.th' | translate}}</p>
 
-                                      <a href="#projects" class="custom-btn custom-border-btn btn mt-3">Discover More</a>
+                                      <a href="#projects" class="custom-btn custom-border-btn btn mt-3">{{'discoverme' | translate}}</a>
 
                                       <div class="services-icon-wrap d-flex justify-content-center align-items-center">
                                           <i class="services-icon bi-phone"></i>
@@ -364,7 +368,7 @@
                           <div class="section-title-wrap d-flex justify-content-center align-items-center mb-4">
                               <img src="assets/images/white-desk-work-study-aesthetics.jpg" class="avatar-image img-fluid" alt="">
 
-                              <h2 class="text-white ms-4 mb-0">Projects</h2>
+                              <h2 class="text-white ms-4 mb-0">{{'pr' | translate}}</h2>
                           </div>
                       </div>
 
@@ -373,10 +377,10 @@
                       <div class="col-lg-4 col-md-6 col-12">
                           <div class="projects-thumb">
                               <div class="projects-info">
-                                  <small class="projects-tag">ui and ux</small>
+                                  <small class="projects-tag">{{'projects.uiux.name' | translate}}</small>
 
-                                  <h3 class="projects-title">Doctor's office appointment website</h3>
-                                  <a href="https://codeload.github.com/rezapaydar/doctorAppointment/zip/refs/heads/main">download</a>
+                                  <h3 class="projects-title">{{'projects.uiux.description' | translate}}</h3>
+                                  <a href="https://codeload.github.com/rezapaydar/doctorAppointment/zip/refs/heads/main">{{'projects.uiux.don' | translate}}</a>
                               </div>
 
                               <a href="images/projects/home-page.png" class="popup-image">
@@ -388,10 +392,10 @@
                       <div class="col-lg-4 col-md-6 col-12">
                           <div class="projects-thumb">
                               <div class="projects-info">
-                                  <small class="projects-tag">website</small>
+                                  <small class="projects-tag">{{'projects.website.name' | translate}}</small>
 
-                                  <h3 class="projects-title">rton website</h3>
-                                  <a href="http://rtonpanel.arkatec.ir/">see rton site</a>
+                                  <h3 class="projects-title">{{'projects.website.webn' | translate}}</h3>
+                                  <a href="http://rtonpanel.arkatec.ir/">{{'projects.website.btn' | translate}}</a>
 
                               </div>
 
@@ -404,9 +408,9 @@
                       <div class="col-lg-4 col-md-6 col-12" >
                           <div class="projects-thumb">
                               <div class="projects-info">
-                                  <small class="projects-tag">graphic design</small>
+                                  <small class="projects-tag">{{'projects.graphic.name' | translate}}</small>
 
-                                  <h3 class="projects-title">Law firm business card </h3>
+                                  <h3 class="projects-title">{{'projects.graphic.law' | translate}}</h3>
                               </div>
 
                               <a href="images/projects/mockup.jpg" class="popup-image">
@@ -427,7 +431,7 @@
                               <div class="section-title-wrap d-flex justify-content-center align-items-center mb-5">
                                   <img src="assets/images/aerial-view-man-using-computer-laptop-wooden-table.jpg" class="avatar-image img-fluid" alt="">
 
-                                  <h2 class="text-white ms-4 mb-0">tell what you want</h2>
+                                  <h2 class="text-white ms-4 mb-0">{{'tellwhat' | translate}}</h2>
                               </div>
                           </div>
 
@@ -435,7 +439,7 @@
 
                           <div class="col-lg-3 col-md-6 col-12 pe-lg-0">
                               <div class="contact-info contact-info-border-start d-flex flex-column">
-                                  <strong class="site-footer-title d-block mb-3">Services</strong>
+                                  <strong class="site-footer-title d-block mb-3">{{'menuitemsfooter.one' | translate}}</strong>
 
                                   <ul class="footer-menu">
                                       <li class="footer-menu-item"><a href="#" class="footer-menu-link">Websites</a></li>
@@ -445,7 +449,7 @@
                                       <li class="footer-menu-item"><a href="#" class="footer-menu-link">ui and ux</a></li>                                        <!-- <li class="footer-menu-item"><a href="#" class="footer-menu-link">SEO</a></li> -->
                                   </ul>
 
-                                  <strong class="site-footer-title d-block mt-4 mb-3">Stay connected</strong>
+                                  <strong class="site-footer-title d-block mt-4 mb-3">{{'menuitemsfooter.two' | translate}}</strong>
 
                                   <ul class="social-icon">
                                       <li class="social-icon-item"><a href="mailto:rezapaydarhmd@gmail.com" class="social-icon-link bi-mailbox"></a></li>
@@ -457,21 +461,21 @@
                                       <li class="social-icon-item"><a href="https://www.youtube.com/templatemo" class="social-icon-link bi-linkedin"></a></li>
                                   </ul>
 
-                                  <strong class="site-footer-title d-block mt-4 mb-3">Start a project</strong>
+                                  <strong class="site-footer-title d-block mt-4 mb-3">{{'menuitemsfooter.three' | translate}}</strong>
 
-                                  <p class="mb-0">I’m available for freelance projects</p>
+                                  <p class="mb-0">{{'status' | translate}}</p>
                               </div>
                           </div>
 
                           <div class="col-lg-3 col-md-6 col-12 ps-lg-0">
                               <div class="contact-info d-flex flex-column">
-                                  <strong class="site-footer-title d-block mb-3">About</strong>
+                                  <strong class="site-footer-title d-block mb-3">{{'menuitemsfooter.four' | translate}}</strong>
 
                                   <p class="mb-2">
-                                      mamareza is a professional web developer. Feel free to get in touch with me.
+                                    {{'lineabout' | translate}}
                             </p>
 
-                                  <strong class="site-footer-title d-block mt-4 mb-3">Email</strong>
+                                  <strong class="site-footer-title d-block mt-4 mb-3">{{'menuitemsfooter.five' | translate}}</strong>
 
                                   <p>
                                       <a href="mailto:rezapaydarhmd@gmail.com">
@@ -479,7 +483,7 @@
                                       </a>
                                   </p>
 
-                                  <strong class="site-footer-title d-block mt-4 mb-3">Call</strong>
+                                  <strong class="site-footer-title d-block mt-4 mb-3">{{'menuitemsfooter.six' | translate}}</strong>
 
                                   <p class="mb-0">
                                       <a href="tel: 120-240-9600">
@@ -496,7 +500,7 @@
                                           <div class="form-floating">
                                               <input type="text" name="name" id="name" class="form-control" placeholder="Name" required="">
                                               
-                                              <label for="floatingInput">Name</label>
+                                              <label for="floatingInput">{{'formvars.n' | translate}}</label>
                                           </div>
                                       </div>
 
@@ -504,7 +508,7 @@
                                           <div class="form-floating">
                                               <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email address" required="">
                                               
-                                              <label for="floatingInput">Email address</label>
+                                              <label for="floatingInput">{{'formvars.e' | translate}}</label>
                                           </div>
                                       </div>
 
@@ -514,7 +518,7 @@
 
                                               <label class="form-check-label" for="inlineCheckbox1">
                                                   <i class="bi-globe form-check-icon"></i>
-                                                  <span class="form-check-label-text">Websites</span>
+                                                  <span class="form-check-label-text">{{'formvars.e' | translate}}</span>
                                               </label>
                                         </div>
                                       </div>
@@ -525,23 +529,23 @@
 
                                               <label class="form-check-label" for="inlineCheckbox2">
                                                   <i class="bi-lightbulb form-check-icon"></i>
-                                                  <span class="form-check-label-text">ui and ux</span>
+                                                  <span class="form-check-label-text">{{'formvars.u' | translate}}</span>
                                               </label>
                                           </div>
                                       </div>
 
                                       <div class="col-lg-3 col-md-6 col-6">
                                           <div class="form-check form-check-inline">
-                                              <input name="ecommerce" type="checkbox" class="form-check-input" id="inlineCheckbox3" value="1">
+                                              <input name="graphic" type="checkbox" class="form-check-input" id="inlineCheckbox3" value="1">
 
                                               <label class="form-check-label" for="inlineCheckbox3">
                                                   <i class="bi-phone form-check-icon"></i>
-                                                  <span class="form-check-label-text">Ecommerce</span>
+                                                  <span class="form-check-label-text">{{'formvars.g' | translate}}</span>
                                               </label>
                                           </div>
                                       </div>
 
-                                      <div class="col-lg-3 col-md-6 col-6">
+                                      <!-- <div class="col-lg-3 col-md-6 col-6">
                                           <div class="form-check form-check-inline me-0">
                                               <input name="seo" type="checkbox" class="form-check-input" id="inlineCheckbox4" value="1">
 
@@ -550,18 +554,18 @@
                                                   <span class="form-check-label-text">SEO</span>
                                               </label>
                                           </div>
-                                      </div>
+                                      </div> -->
 
                                       <div class="col-lg-12 col-12">
                                           <div class="form-floating">
                                               <textarea class="form-control" id="message" name="message" placeholder="Tell me about the project"></textarea>
                                               
-                                              <label for="floatingTextarea">Tell me about the project</label>
+                                              <label for="floatingTextarea">{{'formvars.t' | translate}}</label>
                                           </div>
                                       </div>
 
                                       <div class="col-lg-3 col-12 ms-auto">
-                                          <button type="submit" class="form-control">Send</button>
+                                          <button type="submit" class="form-control">{{'formvars.s' | translate}}</button>
                                       </div>
 
                                   </div>
@@ -582,9 +586,7 @@
                   <div class="col-lg-12 col-12">
                       <div class="copyright-text-wrap">
                           <p class="mb-0">
-                              <span class="copyright-text">Copyright © 2036 <a href="#">mamareza_front</a> person. All rights reserved.</span>
-                              Design: 
-                              <a rel="sponsored" href="https://templatemo.com" target="_blank">TemplateMo</a>
+                              <span class="copyright-text">{{'copy' | translate}}</span>
                           </p>
                       </div>
                   </div>
