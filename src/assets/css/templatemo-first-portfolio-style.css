@@ -1363,13 +1363,13 @@ input:checked + .back {
     color: var(--dark-color);
   }
 
-  .navbar-icon {
+  /* .navbar-icon {
     background: var(--secondary-color);
     color: var(--white-color);
     width: 44px;
     height: 44px;
     line-height: 44px;
-  }
+  } */
 
   .navbar .custom-btn {
     border-color: var(--secondary-color);
